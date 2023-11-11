@@ -62,7 +62,7 @@ public class BinkpAsyncClientPool implements Runnable {
 					}
 				}
 				if (conn == null) {
-					conn = new BinkpAsyncConnector(l.getProtocolAddress());
+					conn = new BinkpSyncConnector(l.getProtocolAddress());
 				}
 				ThreadPool.execute(conn);
 			} catch (RuntimeException e) {
