@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ROOT="`dirname $(readlink -f $0)`/../"
 PIDFILE="$ROOT/jnode.pid";
 JAR="$ROOT/lib"
