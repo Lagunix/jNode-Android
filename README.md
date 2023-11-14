@@ -1,5 +1,8 @@
 Termux edition (Lagunix-patch-1 branch)
 
+Known problems:
+- sucessfull send via loopback interface ONLY if receive in same session
+
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
 It's written in Java (version 1.8 recommended) and distributed under the terms of Apache License 2.0.
