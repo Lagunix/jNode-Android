@@ -1,4 +1,4 @@
-Termux edition (Lagunix-patch-1 branch)
+Termux/Android edition (Lagunix-patch-1 branch)
 
 Known problems:
 - sucessfull send via loopback interface under non-root Android-13+ devices ONLY if have receive in the same session
