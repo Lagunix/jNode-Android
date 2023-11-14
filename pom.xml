@@ -7,20 +7,20 @@
 
     <name>jnode</name>
     <packaging>pom</packaging>
-    <url>http://fidonode.in/jnode/</url>
-    <inceptionYear>2012</inceptionYear>
+    <url>https://github.com/Lagunix/jnode/</url>
+    <inceptionYear>2023</inceptionYear>
 
     <scm>
-        <connection>scm:git:https://github.com/kreon/jnode.git</connection>
-        <developerConnection>scm:git:https://github.com/kreon/jnode.git</developerConnection>
-        <url>https://github.com/kreon/jnode</url>
+        <connection>scm:git:https://github.com/Lagunix/jnode.git</connection>
+        <developerConnection>scm:git:https://github.com/Lagunix/jnode.git</developerConnection>
+        <url>https://github.com/Lagunix/jnode</url>
         <tag>HEAD</tag>
     </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <ormlite.version>4.48</ormlite.version>
-        <java.compiler.version>1.8</java.compiler.version>
+        <java.compiler.version>17</java.compiler.version>
     </properties>
 
     <developers>
@@ -47,7 +47,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
+                <version>3.9.5</version>
                 <configuration>
                     <source>${java.compiler.version}</source>
                     <target>${java.compiler.version}</target>
