@@ -1,4 +1,4 @@
-Termux edition (Lagunix-patch-2 branch)
+Termux edition (Lagunix-patch-1 branch)
 
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
