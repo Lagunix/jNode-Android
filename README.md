@@ -1,3 +1,5 @@
+Termux edition
+
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
 It's written in Java (version 1.8 recommended) and distributed under the terms of Apache License 2.0.
