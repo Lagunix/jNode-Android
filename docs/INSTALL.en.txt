@@ -1,10 +1,10 @@
-1. Open etc/jnode.xxx.conf and change your configuration as described.
+1. Open ./etc/jnode.xxx.conf and change your configuration as described (where xxx - nix/Unix or win/Windows).
 
 2. Configure your mail settings for mail sending function & points autoregistration
 
-3. Run bin/run.sh if you are running on Linux/FreeBSD/OS X or bin\run.bat if on Windows.
+3. Run ./bin/run.sh if you are running on Linux/FreeBSD/OS X/Mac or .\bin\run.bat for  Windows.
 
-4. At the first run, jNode will add some entries to database. Look for messages and don't miss your technical point info!
+4. At the first run, jNode will add some entries to database. Look for messages and don't miss your technical point info (at log-file)!
  For example: 
     18-01-2014 17:45:29 [00000001] InstallUtil          [+] owner point account created
     18-01-2014 17:45:29 [00000001] InstallUtil
