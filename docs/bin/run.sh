@@ -14,7 +14,7 @@ case "$1" in
 		exit
 	fi
 	for I in $JAR/*.jar; do A="$A:$I"; done
-	nohup java -Xmx300m -server -cp "$A" jnode.main.Main jnode.conf &
+	nohup java -Xmx300m -server -cp "$A" jnode.main.Main ./etc/jnode.conf &
 	echo -ne $! > $PIDFILE
 	;;
 	stop)
