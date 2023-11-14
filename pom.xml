@@ -7,7 +7,7 @@
 
     <name>jnode</name>
     <packaging>pom</packaging>
-    <url>http://fidonode.in/jnode/</url>
+    <url>https://github.com/Lagunix/jnode/</url>
     <inceptionYear>2023</inceptionYear>
 
     <scm>
