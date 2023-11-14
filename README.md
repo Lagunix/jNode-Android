@@ -25,9 +25,11 @@ How to install:
 - run.sh
 - enjoy!
 
-Also, you can istall jnode under Termux/proot-distro as the same, but keep attention about free memory on device, strongly recommends only if your device have at least 6Gb RAM or more.
+Also, you can istall jnode under Termux/proot-distro as the same, but keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
-=== /end Termux/Android edition readme
+Regards to hssergey!
+
+=== /end Termux edition readme
 
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
