@@ -1,7 +1,7 @@
 Termux edition (Lagunix-patch-1 branch)
 
 Known problems:
-- sucessfull send via loopback interface ONLY if receive in same session
+- sucessfull send via loopback interface under non-root Android-13+ devices ONLY if have receive in the same session
 
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
