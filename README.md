@@ -1,4 +1,3 @@
-
 ***Termux/Android edition***
 
 Known problems:
@@ -27,7 +26,7 @@ How to install:
 
 Also, you can istall jnode under Termux/proot-distro as the same, but keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
-Regards to hssergey!
+Regards to https://github.com/hssergey !
 
 === /end Termux edition readme
 
