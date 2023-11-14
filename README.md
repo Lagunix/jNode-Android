@@ -2,8 +2,32 @@
 ***Termux/Android edition***
 
 Known problems:
-- sucessfull send via loopback interface under non-root Android-13+ devices ONLY if receive in the same session.
+- sucessfull send via loopback interface under non-rooted  Android-13+ devices ONLY if receive packets in the same session (you must create any request to your node from your Android FTN-client like HotDoged before poll node)
 
+How to install:
+- install Termux
+- pkg update && pkg upgrade
+- pkg install openjdk-17 (optional, if not installed)
+- pkg install maven
+- pkg install git
+- pkg install mc (optional)
+- git clone https://github.com/Lagunix/jnode.git
+- cd jnode
+- mvn install -Dmaven.test.skip=true
+- cd .m2/repository/jnode/jnode-assembly/1.5
+- unzip jnode-assembly-1.5-**dev** /jnode/
+- cd jnode 
+- edit ./etc/jnode.nix.conf
+- cp ./etc/jnode.nix.conf jnode.conf
+- cd ./bin
+- chmod run.sh
+- note: run.sh use only bash!
+- run.sh
+- enjoy!
+
+Also, you can istall jnode under Termux/proot-distro as the same, but keep attention about free memory on device, strongly recommends only if your device have at least 6Gb RAM or more.
+
+=== /end Termux/Android edition readme
 
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
