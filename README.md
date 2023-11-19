@@ -19,7 +19,7 @@ How to install:
 - edit ./etc/jnode.nix.conf
 - cp ./etc/jnode.nix.conf jnode.conf
 - cd ./bin
-- chmod run.sh
+- chmod +x run.sh
 - note: run.sh use only bash!
 - run.sh
 - enjoy!
