@@ -17,12 +17,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
+ 
 package jnode.protocol.binkp.connector;
-
+ 
 import static jnode.protocol.binkp.BinkpProtocolTools.getCommand;
 import static jnode.protocol.binkp.BinkpProtocolTools.write;
-
+ 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.Buffer;
@@ -30,12 +30,12 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
-
+ 
 import jnode.logger.Logger;
 import jnode.protocol.binkp.exceprion.ConnectionEndException;
 import jnode.protocol.binkp.types.BinkpCommand;
 import jnode.protocol.binkp.types.BinkpFrame;
-
+ 
 /**
  * TCP/IP соединение
  * 
@@ -45,7 +45,7 @@ import jnode.protocol.binkp.types.BinkpFrame;
 public class BinkpAsyncConnector extends BinkpAbstractConnector {
 	static final Logger logger = Logger.getLogger(BinkpAsyncConnector.class);
 	private Selector selector;
-
+ 
 	/**
 	 * accept ()
 	 * 
@@ -55,9 +55,9 @@ public class BinkpAsyncConnector extends BinkpAbstractConnector {
 	public BinkpAsyncConnector(SocketChannel socket) throws IOException {
 		super();
 		init(socket);
-
+ 
 	}
-
+ 
 	public BinkpAsyncConnector(String protocolAddress) throws IOException {
 		super(protocolAddress);
 		SocketChannel socket = SocketChannel.open();
@@ -78,13 +78,13 @@ public class BinkpAsyncConnector extends BinkpAbstractConnector {
 		}
 		init(socket);
 	}
-
+ 
 	private void init(SocketChannel socket) throws IOException {
 		socket.configureBlocking(false);
 		selector = Selector.open();
 		socket.register(selector, socket.validOps());
 	}
-
+ 
 	@Override
 	public void run() {
 		try {
@@ -165,7 +165,7 @@ public class BinkpAsyncConnector extends BinkpAbstractConnector {
 					}
 				} catch (IOException e) {
 					error("IOException");
-
+ 
 				}
 			}
 		} catch (ConnectionEndException e) {
@@ -178,13 +178,14 @@ public class BinkpAsyncConnector extends BinkpAbstractConnector {
 				if (currentOS != null) {
 					currentOS.close();
 				}
+				e.printStackTrace();
 			} catch (IOException e2) {
 				logger.l2("Error while closing key", e2);
 			}
 			done();
 		}
 	}
-
+ 
 	private int readOrDie(ByteBuffer buffer, SocketChannel channel)
 			throws IOException {
 		int x = channel.read(buffer);
