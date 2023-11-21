@@ -35,8 +35,10 @@ import jnode.module.JnodeModule;
 import jnode.orm.ORMManager;
 import jnode.protocol.binkp.BinkpAsyncClientPool;
 import jnode.protocol.binkp.BinkpAsyncServer;
-import jnode.stat.threads.StatPoster;
 
+import jnode.protocol.binkp.BinkpSyncServer;
+
+import jnode.stat.threads.StatPoster;
 import java.io.File;
 import java.io.IOException;
 import java.util.Timer;
@@ -119,7 +121,10 @@ public class Main {
         ORMManager.get(Version.class);
 
         // eof
-		ThreadPool.execute(new BinkpAsyncServer());
+
+//		ThreadPool.execute(new BinkpAsyncServer());
+
+ThreadPool.execute(new BinkpSyncServer());
 
 		ThreadPool.execute(new BinkpAsyncClientPool());
 
