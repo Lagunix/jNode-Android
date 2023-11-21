@@ -1,3 +1,36 @@
+** Версия для Termux/Android**
+
+Особенности:
+- используется синхронный интерфейс
+
+Известные проблемы:
+- [исправлено] успешная отправка через интерфейс loopback на  устройствах без root под Android-13+ ТОЛЬКО в случае, если вы получаете пакеты в одном сеансе (вы должны создать любой запрос к своему узлу из вашего Android FTN-клиента, например HotDoged, перед опросом узла)
+
+Как установить:
+- Установить Termux
+- pkg update && pkg upgrade
+- pkg install openjdk-17 (необязательно если уже установлен)
+- pkg install maven
+- pkg install git
+- pkg install mc (необязательно, для вашего удобства)
+- git clone https://github.com/Lagunix/jnode.git
+- cd jnode
+- install mvn -Dmaven.test.skip=true
+- cd .m2/repository/jnode/jnode-assembly/1.5
+- unzip jnode-assembly-1.5-** dev** /jnode/
+- cd jnode 
+- отредактировать ./etc/jnode.nix.conf
+- cp ./etc/jnode.nix.conf jnode.conf
+- cd ./bin
+- chmod +x run.sh
+- примечание: run.sh используйте только с bash!
+- run.sh
+- наслаждайтесь!
+
+Кроме того, вы можете установить jnode в Termux/proot (или proot-distro) таким же образом, но обратите внимание на свободную память, настоятельно рекомендуется не менее 6 Гб оперативной памяти или больше.
+
+С уважением к https://github.com/hssergey
+
 **jNode** — это комплексное кроссплатформенное приложение, заменяющее собой комплект узлового софта (мейлер, тоссер и трекер) для ip-only узлов.
 
 Приложение полностью написано на языке Java (1.7) и распространяется по лицензии Apache License 2.0.
