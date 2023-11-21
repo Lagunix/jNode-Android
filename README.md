@@ -29,13 +29,11 @@ How to install:
 
 Also, you can istall jnode under Termux/proot-distro as the same, but keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
-Regards to https://github.com/hssergey !
-
-=== /end Termux edition readme
+Regards to https://github.com/hssergey
 
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
-It's written in Java (version 1.8 recommended) and distributed under the terms of Apache License 2.0.
+It's written in Java and distributed under the terms of Apache License 2.0.
 
 Features of the current version:
 - sending and receiving bundles using binkp/1.1-compatible protocol
