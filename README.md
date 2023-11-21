@@ -3,7 +3,7 @@
 Features:
 - synchronous interface is used
 
-Known problems:
+Known problems (fixed):
 - sucessfull send via loopback interface under non-rooted  Android-13+ devices ONLY if receive packets in the same session (you must create any request to your node from your Android FTN-client like HotDoged before poll node)
 
 How to install:
