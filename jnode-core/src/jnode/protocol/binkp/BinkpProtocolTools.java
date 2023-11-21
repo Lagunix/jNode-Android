@@ -1,4 +1,4 @@
-/*
+ /*
  * Licensed to the jNode FTN Platform Develpoment Team (jNode Team)
  * under one or more contributor license agreements.
  * See the NOTICE file distributed with this work for 
@@ -123,7 +123,12 @@ public class BinkpProtocolTools {
 	public static int write(BinkpFrame frame, SocketChannel socket) {
 		if (frame != null) {
 			try {
-				socket.write(ByteBuffer.wrap(frame.getBytes()));
+byte[] bytesToSend = frame.getBytes();
+int amountToSend = bytesToSend.length;
+System.out.println("need to send " + amountToSend + "bytes");
+int sentAmount = socket.write(ByteBuffer.wrap(frame.getBytes()));
+System.out.println("actually sent " + sentAmount + "bytes");
+
 				return 1;
 			} catch (IOException e) {
 				e.printStackTrace();
