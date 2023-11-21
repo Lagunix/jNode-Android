@@ -17,9 +17,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
+ 
 package jnode.protocol.binkp.connector;
-
+ 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetSocketAddress;
@@ -27,14 +27,14 @@ import java.net.Socket;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.util.NoSuchElementException;
-
+ 
 import jnode.logger.Logger;
 import jnode.main.threads.ThreadPool;
 import jnode.protocol.binkp.BinkpProtocolTools;
 import jnode.protocol.binkp.exceprion.ConnectionEndException;
 import jnode.protocol.binkp.types.BinkpCommand;
 import jnode.protocol.binkp.types.BinkpFrame;
-
+ 
 /**
  * TCP/IP соединение
  * 
@@ -43,7 +43,7 @@ import jnode.protocol.binkp.types.BinkpFrame;
  */
 public class BinkpSyncConnector extends BinkpAbstractConnector {
 	static final Logger logger = Logger.getLogger(BinkpSyncConnector.class);
-	private volatile Socket socket;
+	private Socket socket;
 	private volatile boolean closed = false;
 	private volatile boolean connected = true;
 	
@@ -66,11 +66,16 @@ public class BinkpSyncConnector extends BinkpAbstractConnector {
 					+ ") for this scheme");
 		}
 	}
-
+ 
+	public BinkpSyncConnector(Socket socket) throws IOException {
+		super();
+		this.socket = socket;
+	}
+ 
 	@Override
 	public void run() {
 		Runnable processOutputObserver = new Runnable() {
-
+ 
 			@Override
 			public void run() {
 				logger.l4("processOutputObserver started");
@@ -113,7 +118,7 @@ public class BinkpSyncConnector extends BinkpAbstractConnector {
 			}
 		};
 		ThreadPool.execute(processOutputObserver);
-
+ 
 		try {
 			greet();
 			while (!closed) {
@@ -173,7 +178,7 @@ public class BinkpSyncConnector extends BinkpAbstractConnector {
 			done();
 		}
 	}
-
+ 
 	private int readOrDie(InputStream inputStream) {
 		try {
 			int x = inputStream.read();
@@ -189,7 +194,7 @@ public class BinkpSyncConnector extends BinkpAbstractConnector {
 			return -1;
 		}
 	}
-
+ 
 	private byte[] readOrDie(InputStream inputStream, int remaining) {
 		try {
 			int len = (remaining > staticBufMaxSize) ? staticBufMaxSize
