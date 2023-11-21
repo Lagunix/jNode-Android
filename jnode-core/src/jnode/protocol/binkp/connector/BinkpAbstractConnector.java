@@ -17,9 +17,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
+ 
 package jnode.protocol.binkp.connector;
-
+ 
 import jnode.core.ConcurrentDateFormatAccess;
 import jnode.dto.Link;
 import jnode.dto.LinkOption;
@@ -38,7 +38,7 @@ import jnode.protocol.binkp.exceprion.ConnectionEndException;
 import jnode.protocol.binkp.types.BinkpCommand;
 import jnode.protocol.binkp.types.BinkpFrame;
 import jnode.protocol.io.Message;
-
+ 
 import java.io.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -46,9 +46,9 @@ import java.text.MessageFormat;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+ 
 import static jnode.protocol.binkp.BinkpProtocolTools.*;
-
+ 
 /**
  * Абстрактный binkp через любой протокол
  * 
@@ -57,7 +57,7 @@ import static jnode.protocol.binkp.BinkpProtocolTools.*;
  */
 public abstract class BinkpAbstractConnector implements Runnable {
 	static final Logger logger = Logger.getLogger(BinkpAbstractConnector.class);
-
+ 
 	private static final ConcurrentDateFormatAccess format = new ConcurrentDateFormatAccess(
 			"EEE, dd MMM yyyy HH:mm:ss Z", Locale.US);
 	private static final Pattern cramPattern = Pattern
@@ -78,7 +78,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 	protected static File staticTempDirectory = null;
 	protected static String staticNetworkName = null;
 	protected static Long staticMaxTimeout = null;
-
+ 
 	protected static void init() {
 		if (staticTempDirectory == null) {
 			staticTempDirectory = new File(MainHandler.getCurrentInstance()
@@ -106,7 +106,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			staticMaxTimeout *= 1000;
 		}
 	}
-
+ 
 	protected int connectionState = STATE_GREET;
 	protected List<FtnAddress> foreignAddress = new ArrayList<>();
 	private List<FtnAddress> ourAddress = new ArrayList<>();
@@ -134,33 +134,33 @@ public abstract class BinkpAbstractConnector implements Runnable {
 	protected int total_sent_files = 0;
 	protected int total_recv_files = 0;
 	protected long lastTimeout;
-
+ 
 	protected LinkedList<BinkpFrame> frames = new LinkedList<>();
 	private long time = 0;
-
+ 
 	public abstract void run();
-
+ 
 	public BinkpAbstractConnector(String protocolAddress) throws IOException {
 		init();
 		this.clientConnection = true;
 		logger.l3("Created " + getClass().getSimpleName()
 				+ " client connection to " + protocolAddress);
 	}
-
+ 
 	public BinkpAbstractConnector() throws IOException {
 		init();
 		this.clientConnection = false;
 		logger.l3("Created " + getClass().getSimpleName()
 				+ " server connection");
 	}
-
+ 
 	protected void error(String text) {
 		frames.clear();
 		frames.addLast(new BinkpFrame(BinkpCommand.M_ERR, text));
 		logger.l2("Local error: " + text);
 		connectionState = STATE_ERROR;
 	}
-
+ 
 	protected void error(String text, Exception e) {
 		frames.clear();
 		frames.addLast(new BinkpFrame(BinkpCommand.M_ERR, text));
@@ -168,7 +168,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		connectionState = STATE_ERROR;
 		e.printStackTrace(System.out);
 	}
-
+ 
 	protected void proccessFrame(BinkpFrame frame) {
 		if (time == 0) {
 			time = new Date().getTime();
@@ -191,30 +191,30 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			case M_ERR:
 				rerror("Remote told: " + frame.getArg());
 				break;
-
+ 
 			case M_EOB:
 				m_eob();
 				break;
-
+ 
 			case M_FILE:
 				m_file(frame.getArg());
 				break;
-
+ 
 			case M_GOT:
 				m_got(frame.getArg());
 				break;
-
+ 
 			case M_GET:
 				m_get(frame.getArg());
 				break;
-
+ 
 			case M_SKIP:
 				m_skip(frame.getArg());
 				break;
-
+ 
 			case M_BSY:
 				m_bsy(frame.getArg());
-
+ 
 			default:
 				break;
 			}
@@ -265,31 +265,31 @@ public abstract class BinkpAbstractConnector implements Runnable {
 					receivingBytesLeft = 0;
 					currentFile = null;
 					currentOS = null;
-
+ 
 				}
 			} else {
 				logger.l4("Unknown data frame: " + frame);
 			}
 		}
-
+ 
 	}
-
+ 
 	private void m_bsy(String arg) {
 		logger.l3("Remote is busy: " + arg);
 		connectionState = STATE_END;
 		finish("m_bsy");
 	}
-
+ 
 	private void rerror(String string) {
 		logger.l2("Remote error: " + string);
 		connectionState = STATE_ERROR;
 	}
-
+ 
 	private void m_eob() {
 		flag_reob = true;
 		checkEOB();
 	}
-
+ 
 	private void m_skip(String arg) {
 		Message found = null;
 		for (Message message : messages) {
@@ -305,9 +305,9 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		} else {
 			logger.l3("M_GOT for file we haven't sent: " + arg);
 		}
-
+ 
 	}
-
+ 
 	private void m_get(String arg) {
 		for (Message message : messages) {
 			if (messageEquals(message, arg)) {
@@ -318,7 +318,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			}
 		}
 	}
-
+ 
 	private void m_got(String arg) {
 		Message found = null;
 		for (Message message : messages) {
@@ -337,7 +337,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			logger.l3("M_GOT for file we haven't sent: " + arg);
 		}
 	}
-
+ 
 	private void m_file(String arg) {
 		receivingMessage = createMessage(arg, secure);
 		long free_space = new File(FtnTools.getInbound()).getFreeSpace();
@@ -390,9 +390,9 @@ public abstract class BinkpAbstractConnector implements Runnable {
 						receivingMessage.getMessageLength()));
 			}
 		}
-
+ 
 	}
-
+ 
 	private void m_ok(String arg) {
 		if (connectionState != STATE_AUTH) {
 			error("We weren't waiting for M_OK");
@@ -404,7 +404,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		logger.l3(text);
 		connectionState = STATE_TRANSFER;
 	}
-
+ 
 	/**
 	 * Обработка входящего M_PWD
 	 * 
@@ -415,7 +415,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			error("We weren't waiting for M_PWD");
 		}
 		boolean valid = (!secure || checkPassword(arg));
-
+ 
 		//FIXME отключили проверку пароля
 //		valid = true;
 		
@@ -435,7 +435,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			connectionState = STATE_ERROR;
 		}
 	}
-
+ 
 	private boolean checkPassword(String arg) {
 		logger.l5("checkPassword(" + arg + ")");
 				
@@ -451,7 +451,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		}
 		return false;
 	}
-
+ 
 	/**
 	 * Обработка входящего M_ADR
 	 * 
@@ -473,7 +473,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 				logger.l4("Invalid address " + addr);
 			}
 		}
-
+ 
 		if (foreignAddress.isEmpty()) {
 			error("No valid address specified");
 			return;
@@ -521,16 +521,16 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			sendAddrs();
 		}
 		connectionState = STATE_AUTH;
-
+ 
 	}
-
+ 
 	protected void busy(String string) {
 		frames.clear();
 		frames.addLast(new BinkpFrame(BinkpCommand.M_BSY, string));
 		connectionState = STATE_END;
 		logger.l3("Local busy: " + string);
 	}
-
+ 
 	private void sendAddrs() {
 		StringBuilder sb = new StringBuilder();
 		boolean flag = true;
@@ -544,7 +544,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		}
 		frames.addLast(new BinkpFrame(BinkpCommand.M_ADR, sb.toString()));
 	}
-
+ 
 	private void m_null(String arg) {
 		logger.l4("M_NULL " + arg);
 		String[] args = arg.split(" ");
@@ -576,9 +576,9 @@ public abstract class BinkpAbstractConnector implements Runnable {
 				logger.l4("Protocol version 1.0");
 			}
 		}
-
+ 
 	}
-
+ 
 	protected void checkForMessages() {
 		checkTimeout();
 		if (connectionState != STATE_TRANSFER) {
@@ -594,7 +594,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			} else { // error, null
 			}
 			return;
-
+ 
 		}
 		for (FtnAddress a : foreignAddress) {
 			messages.addAll(TosserQueue.getInstanse().getMessages(a));
@@ -610,7 +610,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			startNextFile();
 		}
 	}
-
+ 
 	protected void finish(String reason) {
 		time = new Date().getTime() - time;
 		logger.l4("Finishing: " + reason);
@@ -619,7 +619,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		}
 		throw new ConnectionEndException();
 	}
-
+ 
 	protected void greet() {
 		// check if busy
 		if (ThreadPool.isBusy()) {
@@ -641,7 +641,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 				+ MainHandler.getVersion() + " binkp/1.1"));
 		frames.addLast(new BinkpFrame(BinkpCommand.M_NUL, "TIME "
 				+ format.format(new Date())));
-
+ 
 		connectionState = STATE_ADDR;
 		if (clientConnection) {
 			sendAddrs();
@@ -660,23 +660,25 @@ public abstract class BinkpAbstractConnector implements Runnable {
 				cramAlgo = "MD5";
 				frames.addLast(new BinkpFrame(BinkpCommand.M_NUL, String
 						.format("OPT CRAM-MD5-%s", cramText)));
-
+ 
 			} catch (NoSuchAlgorithmException e) {
 				cramText = null;
 			}
 		}
 	}
-
+ 
 	protected boolean isConnected() {
 		checkTimeout();
 		return !((frames.isEmpty() && connectionState == STATE_END) || connectionState == STATE_ERROR);
 	}
-
+ 
 	protected BinkpFrame readFrame() {
 		if (currentInputStream != null) {
 			try {
 				byte[] buf = new byte[staticBufMaxSize];
+				logger.l5("starting read buffer: " + currentInputStream);
 				int n = currentInputStream.read(buf);
+				logger.l5("read bytes: " + n);
 				sent_bytes += n;
 				if (n > 0) {
 					sent_bytes += n;
@@ -698,7 +700,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		}
 		return null;
 	}
-
+ 
 	protected boolean startNextFile() {
 		logger.l5("startNextFile()");
 		try {
@@ -709,7 +711,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			return false;
 		}
 	}
-
+ 
 	protected void sendMessage(Message message, int skip) {
 		logger.l5("sendMessage(" + message.getMessageName() + ")");
 		frames.addLast(new BinkpFrame(BinkpCommand.M_FILE, getString(message,
@@ -726,9 +728,9 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		} catch (IOException e) {
 			error("IOException", e);
 		}
-
+ 
 	}
-
+ 
 	private void checkTimeout() {
 		long last = new Date().getTime();
 		if (last - lastTimeout > staticMaxTimeout) {
@@ -736,11 +738,11 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			finish("Connection timeout");
 		}
 	}
-
+ 
 	private void addTimeout() {
 		lastTimeout = new Date().getTime();
 	}
-
+ 
 	protected void checkEOB() {
 		checkTimeout();
 		if (connectionState == STATE_END || connectionState == STATE_ERROR) {
@@ -758,7 +760,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			}
 		}
 	}
-
+ 
 	protected void done() {
 		try {
 			if (currentOS != null) {
@@ -780,7 +782,7 @@ public abstract class BinkpAbstractConnector implements Runnable {
 			time /= 1000;
 			long scps = (time > 0) ? total_sent_bytes / time : total_sent_bytes;
 			long rcps = (time > 0) ? total_recv_bytes / time : total_recv_bytes;
-
+ 
 			String address = (foreignLink != null) ? foreignLink
 					.getLinkAddress() : foreignAddress.get(0).toString();
 			logger.l2(String.format(
@@ -798,5 +800,5 @@ public abstract class BinkpAbstractConnector implements Runnable {
 		}
 		Notifier.INSTANSE.notify(event);
 	}
-
+ 
 }
