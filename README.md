@@ -1,4 +1,7 @@
-***Termux/Android edition***
+**Termux/Android edition**
+
+Features:
+- synchronous interface is used
 
 Known problems:
 - sucessfull send via loopback interface under non-rooted  Android-13+ devices ONLY if receive packets in the same session (you must create any request to your node from your Android FTN-client like HotDoged before poll node)
