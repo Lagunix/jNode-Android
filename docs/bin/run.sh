@@ -37,7 +37,7 @@ case "$1" in
 		exit
 	fi
 	for I in $JAR/*.jar; do A="$A:$I"; done
-	nohup java -Xmx300m -server -cp "$A" -Dusertimezone="$TZ" jnode.main.Main ./etc/jnode.conf & echo -en ${yellow}"\njNode sucessfully started!${reset}\n\n";
+	nohup java -Xmx300m -server -cp "$A" -Duser.timezone="$TZ" jnode.main.Main ./etc/jnode.conf & echo -en ${yellow}"\njNode sucessfully started!${reset}\n\n";
 	echo -en "PID: ${red}$JPID\n\n"${reset}
 	;;
 
