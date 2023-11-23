@@ -80,7 +80,7 @@
 + Релиз версии 1.0
 01.11.2023
 + Родилась идея использования jNode под управлением Android для пересборки брошенного автором HotdogEd, включающего переработанный код jNode. Для чего на GitHub был создан форк jNode https://github.com/Lagunix/jnode ( Спасибо Oleg Nazaroff, 2:50/700 )
-6.11.2023
+06.11.2023
 + Сборка jNode под Termux/Android 14, JDK17
 07.11.2023
 + Документация для сборки jNode под Android/Termux
