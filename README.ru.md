@@ -1,10 +1,10 @@
 ** Версия для Termux/Android**
 
 Особенности:
-- используется синхронный интерфейс
+* используется синхронный интерфейс
 
 Известные проблемы:
-- [исправлено] успешная отправка через интерфейс loopback на  устройствах без root под Android-13+ ТОЛЬКО в случае, если вы получаете пакеты в одном сеансе (вы должны создать любой запрос к своему узлу из вашего Android FTN-клиента, например HotDoged, перед опросом узла)
+* [исправлено] успешная отправка через интерфейс loopback на  устройствах без root под Android-13+ ТОЛЬКО в случае, если вы получаете пакеты в одном сеансе (вы должны создать любой запрос к своему узлу из вашего Android FTN-клиента, например HotDoged, перед опросом узла)
 
 Как установить:
 * Установить Termux
@@ -12,10 +12,10 @@
 * pkg install openjdk-17 (необязательно если уже установлен)
 * pkg install maven
 * pkg install git
-* git clone https://github.com/Lagunix/jnode-android.git
+* git clone https://github.com/Lagunix/jNode-Android.git
 * cd jnode
 * install mvn -Dmaven.test.skip=true
-* cd .m2/repository/jnode/jnode-assembly/1.5
+* cd .m2/repository/jnode/jnode-android-assembly/1.5
 * unzip jnode-android-assembly-1.5-** dev** /jnode/
 * cd jnode 
 * отредактировать ./etc/jnode.conf
@@ -24,7 +24,7 @@
 * chmod +x run.sh / ru.sh
 * примечание: run.sh / ru.sh  используйте только с bash!
 * run.sh / ru.sh
-* наслаждайтесь!
+* Наслаждайтесь!
 
 Кроме того, вы можете установить jNode в Termux/proot (или proot-distro) таким же образом, но обратите внимание на свободную память, настоятельно рекомендуется не менее 6 Гб оперативной памяти или больше.
 
