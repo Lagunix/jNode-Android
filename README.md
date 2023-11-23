@@ -22,12 +22,13 @@ How to install:
 - edit ./etc/jnode.nix.conf
 - cp ./etc/jnode.nix.conf jnode.conf
 - cd ./bin
+- edit TZ (Time Zone) at ./bin/run.sh
 - chmod +x run.sh
 - note: run.sh use only bash!
 - run.sh
 - enjoy!
 
-Also, you can istall jnode under Termux/proot or proot-distro, but in that case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
+Also, you can istall jNode under Termux/proot or proot-distro, but in this case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
 Regards to https://github.com/hssergey
 
