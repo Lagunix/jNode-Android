@@ -27,7 +27,7 @@ How to install:
 - run.sh
 - enjoy!
 
-Also, you can istall jnode under Termux/proot-distro as the same, but keep attention about free memory, strongly recommends at least 6Gb RAM or more.
+Also, you can istall jnode under Termux/proot or proot-distro, but in that case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
 Regards to https://github.com/hssergey
 
