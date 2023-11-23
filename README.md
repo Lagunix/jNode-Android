@@ -12,17 +12,15 @@ How to install:
 - pkg install openjdk-17 (optional, if not installed)
 - pkg install maven
 - pkg install git
-- pkg install mc (optional)
 - git clone https://github.com/Lagunix/jNode-Android.git
 - cd jnode
 - mvn install -Dmaven.test.skip=true
-- cd .m2/repository/jnode/jnode-assembly/1.5
-- unzip jnode-assembly-1.5-**dev** /jnode/
+- cd .m2/repository/jnode/jnode-android-assembly/1.5
+- unzip jnode-android-assembly-1.5-**dev** /jnode/
 - cd jnode 
-- edit ./etc/jnode.nix.conf
-- cp ./etc/jnode.nix.conf jnode.conf
+- edit ./etc/jnode.conf
 - cd ./bin
-- edit TZ (Time Zone) at ./bin/run.sh
+- edit TZ (your actual time zone) at ./bin/run.sh
 - chmod +x run.sh
 - note: run.sh use only bash!
 - run.sh
