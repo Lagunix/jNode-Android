@@ -7,24 +7,24 @@ Known problems (fixed):
 - sucessfull send via loopback interface under non-rooted  Android-13+ devices ONLY if receive packets in the same session (you must create any request to your node from your Android FTN-client like HotDoged before poll node)
 
 How to install:
-- install Termux
-- pkg update && pkg upgrade
-- pkg install openjdk-17 (optional, if not installed)
-- pkg install maven
-- pkg install git
-- git clone https://github.com/Lagunix/jNode-Android.git
-- cd jnode
-- mvn install -Dmaven.test.skip=true
-- cd .m2/repository/jnode/jnode-android-assembly/1.5
-- unzip jnode-android-assembly-1.5-**dev** /jnode/
-- cd jnode 
-- edit ./etc/jnode.conf
-- cd ./bin
-- edit TZ (your actual time zone) at ./bin/run.sh
-- chmod +x run.sh
-- note: run.sh use only bash!
-- run.sh
-- enjoy!
+* install Termux
+* pkg update && pkg upgrade
+* pkg install openjdk-17 (optional, if not installed)
+* pkg install maven
+* pkg install git
+* git clone https://github.com/Lagunix/jNode-Android.git
+* cd jnode
+* mvn install -Dmaven.test.skip=true
+* cd .m2/repository/jnode/jnode-android-assembly/1.5
+* unzip jnode-android-assembly-1.5-**dev** /jnode/
+* cd jnode 
+* edit ./etc/jnode.conf
+* cd ./bin
+* edit TZ (your actual time zone) at top of ./bin/run.sh
+* chmod +x run.sh
+* note: run.sh use only bash!
+* run.sh
+* Enjoy!
 
 Also, you can istall jNode under Termux/proot or proot-distro, but in this case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
