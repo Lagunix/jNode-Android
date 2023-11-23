@@ -80,7 +80,7 @@
 + 1.0 version release
 01.11.2023
 + The idea of using jNode running Android was born to rebuild the HotdogEd abandoned by the author, including the redesigned JNode code. To do this, a fork of jnode was created on GitHub:  https://github.com/Lagunix/jnode
-6.11.2023
+06.11.2023
 + Build for Termux/Android 14, JDK17
 07.11.2023
 + Documentation for building jNode for Android/Termux
