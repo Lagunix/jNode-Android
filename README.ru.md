@@ -7,26 +7,24 @@
 - [исправлено] успешная отправка через интерфейс loopback на  устройствах без root под Android-13+ ТОЛЬКО в случае, если вы получаете пакеты в одном сеансе (вы должны создать любой запрос к своему узлу из вашего Android FTN-клиента, например HotDoged, перед опросом узла)
 
 Как установить:
-- Установить Termux
-- pkg update && pkg upgrade
-- pkg install openjdk-17 (необязательно если уже установлен)
-- pkg install maven
-- pkg install git
-- pkg install mc (необязательно, для вашего удобства)
-- git clone https://github.com/Lagunix/jnode.git
-- cd jnode
-- install mvn -Dmaven.test.skip=true
-- cd .m2/repository/jnode/jnode-assembly/1.5
-- unzip jnode-assembly-1.5-** dev** /jnode/
-- cd jnode 
-- отредактировать ./etc/jnode.nix.conf
-- cp ./etc/jnode.nix.conf jnode.conf
-- cd ./bin
-- отредактировать TZ (временная зона) ./bin/run.sh или ./bin/ru.sh (русскоязычный скрипт)
-- chmod +x run.sh / ru.sh
-- примечание: run.sh / ru.sh  используйте только с bash!
-- run.sh / ru.sh
-- наслаждайтесь!
+* Установить Termux
+* pkg update && pkg upgrade
+* pkg install openjdk-17 (необязательно если уже установлен)
+* pkg install maven
+* pkg install git
+* git clone https://github.com/Lagunix/jnode-android.git
+* cd jnode
+* install mvn -Dmaven.test.skip=true
+* cd .m2/repository/jnode/jnode-assembly/1.5
+* unzip jnode-android-assembly-1.5-** dev** /jnode/
+* cd jnode 
+* отредактировать ./etc/jnode.conf
+* cd ./bin
+* отредактировать TZ (актуальная временная зона) ./bin/run.sh или ./bin/ru.sh (русскоязычный скрипт)
+* chmod +x run.sh / ru.sh
+* примечание: run.sh / ru.sh  используйте только с bash!
+* run.sh / ru.sh
+* наслаждайтесь!
 
 Кроме того, вы можете установить jNode в Termux/proot (или proot-distro) таким же образом, но обратите внимание на свободную память, настоятельно рекомендуется не менее 6 Гб оперативной памяти или больше.
 
