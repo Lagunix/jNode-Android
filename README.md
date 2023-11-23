@@ -13,7 +13,7 @@ How to install:
 - pkg install maven
 - pkg install git
 - pkg install mc (optional)
-- git clone https://github.com/Lagunix/jnode.git
+- git clone https://github.com/Lagunix/jNode-Android.git
 - cd jnode
 - mvn install -Dmaven.test.skip=true
 - cd .m2/repository/jnode/jnode-assembly/1.5
