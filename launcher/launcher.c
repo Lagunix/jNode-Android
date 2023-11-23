@@ -25,13 +25,6 @@
 #define JAVA_BINARY "java"
 #endif
 
-#ifdef WINDOWS
-#define FILE_SEPARATOR "\\"
-#define CLASSPATH_SEPARATOR ";"
-#define JNODE_DEF_LOCATION "C:\\Program Files\\jnode\\";
-#define JAVA_BINARY "java.exe"
-#endif
-
 #ifndef JNODE_CLASS
 #define JNODE_CLASS "jnode.main.Main"
 #endif
@@ -55,7 +48,6 @@
 #ifndef FALSE
 #define FALSE 0
 #endif
-
 
 
 static int flag_display = FALSE;
