@@ -10,18 +10,15 @@ blue='\033[1;36m'
 white='\033[1;37m'
 reset='\033[0m'
 
-echo -en ${white}"Запуск jNode...\n\n"${reset}
-bash ~/jnode/bin/run.sh start
+echo -en "${white}\nЗапуск jNode...\n\n${reset}"
+bash ~/jnode/bin/ru.sh start
 JPID="$(pidof java)"
 if [ $JPID > "0" ]
 then
-#echo "jNode уже работает!";
-echo -en "PID:" ${red}$JPID${reset};
-echo
-#else
+echo -en "\nPID: ${red}$JPID${reset}\n\n";
 fi
 echo
 read -sp "Нажмите Enter для завершения"
-echo
-echo "Ок"
+echo -en "\n\nОк\n"
+#bash ~/.shortcuts/jNodeCHK
 exit
