@@ -26,7 +26,7 @@ reset='\033[0m'
 
 cd $ROOT
 if [ "$1" == "" ]; then
-	echo -en ${red}"No arguments expected!\n${green}Usage: ${reset}$0 ${green}(${magenta}start${green}|${blue}stop${green}|${yellow}restart${green}|help)\n${green}See help for details.\n"${reset}
+	echo -en ${red}"\nNo arguments expected!\n\n${green}Usage: ${reset}$0 ${green}(${magenta}start${green}|${blue}stop${green}|${yellow}restart${green}|help)\n${green}See help for details.\n\n"${reset}
 fi
 
 case "$1" in
@@ -57,12 +57,12 @@ case "$1" in
 	;;
 
 	help)
-	echo -en ${yellow}"\nThis version of jNode FTN Platform is designed to work ${red}only${yellow} under Termux/Android!\n\n${green}Usage: ${white}$0 ${green}(${magenta}start${green}|${blue}stop${green}|${yellow}restart${green}|${red}build${green}|help)\n${red}Warning!${reset} Argument '${red}build${reset}' will reset all passwords!\n${green}Sample: ${white}/.run.sh start ${green}will started jNode...\n\n${yellow}If nothing works out, finally read the instructions!\n${green}RTFM you can found here: ${blue}https://github.com/Lagunix/jnode\n\n"${reset}
+	echo -en ${yellow}"\nThis version of jNode is designed to work ${red}only${yellow} under Termux/Android!\n\n${green}Usage: ${white}$0 ${green}(${magenta}start${green}|${blue}stop${green}|${yellow}restart${green}|${red}build${green}|help)\n${red}Warning!${reset} Argument '${red}build${reset}' will reset all passwords!\n${green}Sample: ${white}/.run.sh start ${green}will started jNode...\n\n${yellow}If nothing works out, finally read the instructions!\n${green}RTFM you can found here: ${blue}https://github.com/Lagunix/jNode-Android\n\n"${reset}
 	;;
 	*)
 
 if [ "$1" <> "0" ]; then
-	echo -en ${red}"Illegal arguments expected!\n${green}Usage: ${reset}$0 ${green}(${magenta}start${green}|${blue}stop${green}|${yellow}restart${green}|help)\nSee help for details.\n"${reset}
+	echo -en ${red}"\nIllegal arguments expected!\n\n${green}Usage: ${reset}$0 ${green}(${magenta}start${green}|${blue}stop${green}|${yellow}restart${green}|help)\nSee help for details.\n\n"${reset}
 fi
 	exit 0;
 esac
