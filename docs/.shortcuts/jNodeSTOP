@@ -10,14 +10,9 @@ blue='\033[1;36m'
 white='\033[1;37m'
 reset='\033[0m'
 
-echo -en ${white}"Остановка jNode... PID:${red}$(pidof java)\n\n"${reset}
-bash ~/jnode/bin/run.sh stop
-if [ "$(pidof java)" = "" ]
-then
-echo -en ${yellow}"jNode не запущена.\n"${reset};
-fi
+echo -en ${white}"\nОстановка jNode... PID:${red}$(pidof java)\n\n"${reset}
+bash ~/jnode/bin/ru.sh stop
 echo
 read -sp "Нажмите Enter для завершения"
-echo
-echo "Ок"
+echo -en "\nОк\n\n"
 exit
