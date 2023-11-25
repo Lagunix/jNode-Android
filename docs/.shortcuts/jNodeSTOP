@@ -1,4 +1,11 @@
 #!/bin/bash
+
+##################################
+#        jNode stop script       #
+#    only for Termux / Android   #
+# Copyright (c) 2023 by 2:50/700 #
+##################################
+
 # colors
 gray='\033[1;30m'
 red='\033[1;31m'
