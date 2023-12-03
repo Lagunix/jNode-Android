@@ -1,5 +1,6 @@
-**** jNode users F.A.Q. created at 11.01.2014 ****
-**** Updated at 13.02.2014 ****
+*** jNode users F.A.Q. ***
+*** created at 11.01.2014 ***
+*** Updated at 3.12.2023 ***
 
 Q: What is jNode?
 A: This is a Fidonet Technical Network ( FTN ) software platform which covers typical needs of Fidonet node.
@@ -57,6 +58,8 @@ SELECT e.name FROM echoarea e RIGHT JOIN subscription s ON (s.echoarea_id=e.id) 
 List of links are subscribed this echoarea:
 SELECT l.ftn_address FROM echoarea e RIGHT JOIN subscription s ON (s.echoarea_id=e.id) RIGHT JOIN links l ON (l.id=s.link_id) WHERE e.name='echoarea';
 
+Q: How can I give a link (node/point) several different access groups at once? 
+A: In the "Access group" field of the desired link, list the names of the groups separated by a space;
 
 Q: I've found a bug!
 A: 1. Send me logfile ( with log.level = 5 if possible )
