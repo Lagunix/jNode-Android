@@ -3,7 +3,6 @@
 **Android/Termux edition**
 
 [![readthedocs](https://shields.io/readthedocs/jnode-android)](https://jnode-android.readthedocs.io)
-[![github/workflow](https://github.com/lagunix/jnode-android/actions/workflows/main.yml/badge.svg)](https://github.com/termux/lagunix/jnode-android/actions)
 
 [![github/downloads](https://shields.io/github/downloads/Lagunix/jNode-Android/total)](https://github.com/Lagunix/jNode-Android/releases)
 [![github/downloads/latest](https://shields.io/github/downloads/lagunix/jnode-android/latest/total)](https://github.com/lagunix/jnode-android/releases/latest)
