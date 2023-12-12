@@ -5,7 +5,7 @@
 [![readthedocs](https://shields.io/readthedocs/jnode-android)](https://jnode-android.readthedocs.io)
 
 [![github/downloads](https://shields.io/github/downloads/Lagunix/jNode-Android/total)](https://github.com/Lagunix/jNode-Android/releases)
-[![github/downloads/latest](https://shields.io/github/downloads/Lagunix/jNode-Android/latest/total)](https://github.com/lagunix/jnode-android/releases/latest)
+[![github/downloads/latest](https://shields.io/github/downloads/Lagunix/jNode-Android/latest/total)](https://github.com/lagunix/jnode-android/latest)
 [![github/issues](https://shields.io/github/issues/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues)
 [![github/issues-closed](https://shields.io/github/issues-closed/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues?q=is%3Aissue+is%3Aclosed)
 [![github/issues-pr](https://shields.io/github/issues-pr/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/pulls)
@@ -28,10 +28,9 @@
 [![github/repo-size](https://shields.io/github/repo-size/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 [![github/v](https://shields.io/github/v/release/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 
-This doesn't support:
+This version doesn't support:
 
 - [ ] Chroot (termux-chroot)
-  - [ ] error
 
 Features:
 
@@ -39,21 +38,13 @@ Features:
 - [x] managed from Android interface
 - [x] managed from Termux
 
-### Screenshots
+## Screenshots
 
-### Document Link
-
-![document link](https://)
-
-### Completion
-
-![completion](https://)
-
-![arch](https://)
+## Completion
 
 ![license](https://github.com/Lagunix/jNode-Android/LICENSE)
 
-![depends](https://github.com/lagunix/jnode-android/assets/)
+![depends](https://github.com/lagunix/jnode-android/assets)
 
 ## How Does It Work
 
@@ -61,22 +52,21 @@ Read
 [![readthedocs](https://shields.io/readthedocs/lagunix/jnode-android)](https://jnode-android.readthedocs.io)
 to know more.
 
-Known problems (fixed):
-- sucessfull send via loopback interface under non-rooted  Android-13+ devices ONLY if receive packets in the same session (you must create any request to your node from your Android FTN-client like HotDoged before poll node)
+### Known problems [fixed]
+- [x] sucessfull send via loopback interface under non-rooted Android-13+ devices ONLY if receive packets in the same session (you must create any request to your node from your Android FTN-client like HotDoged before poll node)
 
-How to install:
+## How to install:
 * install Termux
 * install Termux-Widget
 * pkg update && pkg upgrade
 * pkg install openjdk-17 (optional, if not installed)
-* pkg install maven
-* pkg install git
+* pkg install git maven
 * git clone https://github.com/Lagunix/jNode-Android.git
 * cd jnode
 * mvn install -Dmaven.test.skip=true
 * cd .m2/repository/jnode/jnode-android-assembly/1.5
-* unzip jnode-android-assembly-1.5-**dev** /jnode/
-* cd jnode 
+* unzip jnode-android-assembly-1.5-**dev** ~/jnode/
+* cd ~/jnode 
 * edit ./etc/jnode.conf
 * cd ./bin
 * edit TZ (your actual time zone) at top of ./bin/run.sh
@@ -85,11 +75,11 @@ How to install:
 * run.sh
 * Enjoy!
 
-Also, you can istall jNode under Termux/proot or proot-distro, but in this case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
+Also, you can istall jNode under Termux proot or proot-distro pkg, but in this case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
 Regards to https://github.com/hssergey
 
-===========================
+============
 
 Below is a description of the original JNode project:
 
