@@ -21,8 +21,8 @@
 [![github/release-date](https://shields.io/github/release-date/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/releases/latest)
 
 [![github/license](https://shields.io/github/license/Lagunix/jNode-Android)](https://github.com/Lagunix/jNode-Android/LICENSE)
-[![github/languages](https://shields.io/github/languages/count/jnode-android)](https://github.com/Lagunix/jNode-Android)
-[![github/languages/top](https://shields.io/github/languages/top/jnode-android)](https://github.com/Lagunix/jNode-Android)
+[![github/languages](https://shields.io/github/languages/count/lagunix/jnode-android)](https://github.com/Lagunix/jNode-Android)
+[![github/languages/top](https://shields.io/github/languages/top/lagunix/jnode-android)](https://github.com/Lagunix/jNode-Android)
 [![github/directory-file-count](https://shields.io/github/directory-file-count/lagunux/jnode-android)](https://github.com/lagunix/jnode-android)
 [![github/code-size](https://shields.io/github/languages/code-size/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 [![github/repo-size](https://shields.io/github/repo-size/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
