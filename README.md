@@ -5,10 +5,9 @@
 [![readthedocs](https://shields.io/readthedocs/jnode-android)](https://jnode-android.readthedocs.io)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/lagunix/jnode-android/main.svg)](https://results.pre-commit.ci/latest/github/lagunix/jnode-android/main)
 [![github/workflow](https://github.com/lagunix/jnode-android/actions/workflows/main.yml/badge.svg)](https://github.com/termux/lagunix/jnode-android/actions)
-[![codecov](https://codecov.io/gh/lagunix/jnode-android/branch/main/graph/badge.svg)](https://codecov.io/gh/lagunix/jnode-android)
-[![DeepSource](https://deepsource.io/gh/termux/lagunix/jnode-android.svg/?show_trend=true)](https://deepsource.io/gh/lagunix/jnode-android)
+[![codecov](https://codecov.io/gh/Lagunix/jNode-Android/branch/main/graph/badge.svg)](https://codecov.io/gh/Lagunix/jNode-Android)
 
-[![github/downloads](https://shields.io/github/downloads/termux/lagunix/jnode-android/total)](https://github.com/termux/lagunix/jnode-android/releases)
+[![github/downloads](https://shields.io/github/downloads/Lagunix/jNode-Android/total)](https://github.com/Lagunix/jNode-Android/releases)
 [![github/downloads/latest](https://shields.io/github/downloads/lagunix/jnode-android/latest/total)](https://github.com/lagunix/jnode-android/releases/latest)
 [![github/issues](https://shields.io/github/issues/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/issues)
 [![github/issues-closed](https://shields.io/github/issues-closed/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/issues?q=is%3Aissue+is%3Aclosed)
