@@ -5,14 +5,14 @@
 [![readthedocs](https://shields.io/readthedocs/jnode-android)](https://jnode-android.readthedocs.io)
 
 [![github/downloads](https://shields.io/github/downloads/Lagunix/jNode-Android/total)](https://github.com/Lagunix/jNode-Android/releases)
-[![github/downloads/latest](https://shields.io/github/downloads/lagunix/jnode-android/latest/total)](https://github.com/lagunix/jnode-android/releases/latest)
-[![github/issues](https://shields.io/github/issues/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/issues)
-[![github/issues-closed](https://shields.io/github/issues-closed/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/issues?q=is%3Aissue+is%3Aclosed)
-[![github/issues-pr](https://shields.io/github/issues-pr/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/pulls)
-[![github/issues-pr-closed](https://shields.io/github/issues-pr-closed/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/pulls?q=is%3Apr+is%3Aclosed)
+[![github/downloads/latest](https://shields.io/github/downloads/Lagunix/jNode-Android/latest/total)](https://github.com/lagunix/jnode-android/releases/latest)
+[![github/issues](https://shields.io/github/issues/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues)
+[![github/issues-closed](https://shields.io/github/issues-closed/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues?q=is%3Aissue+is%3Aclosed)
+[![github/issues-pr](https://shields.io/github/issues-pr/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/pulls)
+[![github/issues-pr-closed](https://shields.io/github/issues-pr-closed/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/pulls?q=is%3Apr+is%3Aclosed)
 [![github/discussions](https://shields.io/github/discussions/Lagunux/jNode-Android)](https://github.com/Lagunix/jNode-Android/discussions)
-[![github/milestones](https://shields.io/github/milestones/all/lagunix/jnode-android)](https://github.com/lafunix/jnode-android/milestones)
-[![github/forks](https://shields.io/github/forks/jnode-android)](https://github.com/lagunix/jnode-android/network/members)
+[![github/milestones](https://shields.io/github/milestones/all/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/milestones)
+[![github/forks](https://shields.io/github/forks/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/network/members)
 [![github/stars](https://shields.io/github/stars/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/stargazers)
 [![github/watchers](https://shields.io/github/watchers/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/watchers)
 [![github/contributors](https://shields.io/github/contributors/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/graphs/contributors)
@@ -43,17 +43,17 @@ Features:
 
 ### Document Link
 
-![document link](https://
+![document link](https://)
 
 ### Completion
 
-![completion](https://
+![completion](https://)
 
-![arch](https://
+![arch](https://)
 
 ![license](https://github.com/Lagunix/jNode-Android/LICENSE)
 
-![depends](https://github.com/lagunix/jnode-android/assets/
+![depends](https://github.com/lagunix/jnode-android/assets/)
 
 ## How Does It Work
 
