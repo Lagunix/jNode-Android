@@ -89,6 +89,8 @@ Also, you can istall jNode under Termux/proot or proot-distro, but in this case,
 
 Regards to https://github.com/hssergey
 
+===========================
+
 Below is a description of the original JNode project:
 
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
