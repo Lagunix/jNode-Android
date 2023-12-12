@@ -10,7 +10,7 @@
 [![github/issues-closed](https://shields.io/github/issues-closed/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/issues?q=is%3Aissue+is%3Aclosed)
 [![github/issues-pr](https://shields.io/github/issues-pr/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/pulls)
 [![github/issues-pr-closed](https://shields.io/github/issues-pr-closed/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/pulls?q=is%3Apr+is%3Aclosed)
-[![github/discussions](https://shields.io/github/discussions/lagunux/jnode-android)](https://github.com/lagunix/jnode-android/discussions)
+[![github/discussions](https://shields.io/github/discussions/Lagunux/jNode-Android)](https://github.com/Lagunix/jNode-Android/discussions)
 [![github/milestones](https://shields.io/github/milestones/all/lagunix/jnode-android)](https://github.com/lafunix/jnode-android/milestones)
 [![github/forks](https://shields.io/github/forks/jnode-android)](https://github.com/lagunix/jnode-android/network/members)
 [![github/stars](https://shields.io/github/stars/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/stargazers)
