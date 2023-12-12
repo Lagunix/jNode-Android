@@ -1,11 +1,21 @@
-Lead developer/Project manager:
+Lead jNode/Android project manager:
+    Oleg Nazaroff;
+Moscow, Russia
+    Netmail: 2:50/700
+
+jNode/Android developer:
+    Sergey Kaluzhsky;
+Volgograd, Russia
+    Netmail: 2:5055/182, 2:5020/570.182
+
+Lead jNode developer/Project manager:
     Ivan 'kreon' Agarkov; Moscow, Russia
     Netmail: 2:5020/848, 2:5020/849
     Email: ivan.agarkov@gmail.com
     ICQ: 2515521
     Jabber: kreon@xmpp.ru
 
-Developer:
+jNode developer:
     Kirill Temnenkov; Moscow, Russia
     Netmail: 2:5020/828
     Email: kirill@temnenkov.com
