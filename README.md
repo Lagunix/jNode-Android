@@ -20,7 +20,7 @@
 [![github/last-commit](https://shields.io/github/last-commit/jnode-android)](https://github.com/lagunix/jnode-android/commits)
 [![github/release-date](https://shields.io/github/release-date/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/releases/latest)
 
-[![github/license](https://shields.io/github/license/jnode-android)](https://github.com/lagunix/jnode-android/LICENSE)
+[![github/license](https://shields.io/github/license/Lagunix/jNode-Android)](https://github.com/Lagunix/jNode-Android/LICENSE)
 [![github/languages](https://shields.io/github/languages/count/jnode-android)](https://github.com/Lagunix/jNode-Android)
 [![github/languages/top](https://shields.io/github/languages/top/jnode-android)](https://github.com/Lagunix/jNode-Android)
 [![github/directory-file-count](https://shields.io/github/directory-file-count/lagunux/jnode-android)](https://github.com/lagunix/jnode-android)
@@ -28,43 +28,22 @@
 [![github/repo-size](https://shields.io/github/repo-size/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 [![github/v](https://shields.io/github/v/release/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 
-[![pypi/status](https://shields.io/pypi/status/jnode-android)](https://pypi.org/project/jnode-android/#description)
-[![pypi/v](https://shields.io/pypi/v/jnode-android)](https://pypi.org/project/jnode-android/#history)
-[![pypi/downloads](https://shields.io/pypi/dd/jnode-android)](https://pypi.org/project/jnode-android/#files)
-[![pypi/format](https://shields.io/pypi/format/jnode-android)](https://pypi.org/project/jnode-android/#files)
-[![pypi/implementation](https://shields.io/pypi/implementation/jnode-android)](https://pypi.org/project/jnode-android/#files)
-[![pypi/pyversions](https://shields.io/pypi/pyversions/jnode-android)](https://pypi.org/project/jnode-android/#files)
-
 This doesn't support:
 
-- [ ] [Chroot](termux-chroot)
+- [ ] Chroot (termux-chroot)
   - [ ] error
 
-```toml
-[package_name]
-source = "github"
-github = "author_name/repo_name"
-use_max_tag = true
-```
-Other features:
+Features:
 
 - [x] synchronous network interface
 - [x] managed from Android interface
 - [x] managed from Termux
 
-## Screenshots
-
-### Diagnostic
+### Screenshots
 
 ### Document Link
 
 ![document link](https://
-
-### Hover
-
-![keyword](https://
-
-![package](https://
 
 ### Completion
 
@@ -72,7 +51,7 @@ Other features:
 
 ![arch](https://
 
-![license](https://github.com/lagunix/jnode-android/
+![license](https://github.com/Lagunix/jNode-Android/LICENSE)
 
 ![depends](https://github.com/lagunix/jnode-android/assets/
 
