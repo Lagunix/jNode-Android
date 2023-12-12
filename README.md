@@ -1,6 +1,7 @@
-**Termux/Android edition**
+**Android/Termux edition**
 
 Features:
+- managed from Android interface
 - synchronous interface is used
 
 Known problems (fixed):
@@ -8,6 +9,7 @@ Known problems (fixed):
 
 How to install:
 * install Termux
+* install Termux-Widget
 * pkg update && pkg upgrade
 * pkg install openjdk-17 (optional, if not installed)
 * pkg install maven
@@ -29,6 +31,8 @@ How to install:
 Also, you can istall jNode under Termux/proot or proot-distro, but in this case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
 Regards to https://github.com/hssergey
+
+Below is a description of the original JNode project:
 
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
