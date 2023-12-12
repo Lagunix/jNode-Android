@@ -17,7 +17,7 @@
 [![github/watchers](https://shields.io/github/watchers/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/watchers)
 [![github/contributors](https://shields.io/github/contributors/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/graphs/contributors)
 [![github/commit-activity](https://shields.io/github/commit-activity/w/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/graphs/commit-activity)
-[![github/last-commit](https://shields.io/github/last-commit/jnode-android)](https://github.com/lagunix/jnode-android/commits)
+[![github/last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/commits)
 [![github/release-date](https://shields.io/github/release-date/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/releases/latest)
 
 [![github/license](https://shields.io/github/license/Lagunix/jNode-Android)](https://github.com/Lagunix/jNode-Android/LICENSE)
