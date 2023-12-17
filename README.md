@@ -67,11 +67,12 @@ to know more.
 
 Also, you can istall jNode under Termux proot or proot-distro pkg, but in this case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
-### Regards https://github.com/hssergey
+### Regards
+https://github.com/hssergey
 
 ============
 
-Below is a description of the original JNode project:
+### Below is a description of the original JNode project:
 
 **jNode** is a complex portable application, providing all necessary functions (mailer, tosser, tracker) for a FTN system.
 
