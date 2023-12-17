@@ -42,10 +42,6 @@ Features:
 
 ## Completion
 
-![license](https://github.com/Lagunix/jNode-Android/LICENSE)
-
-![depends](https://github.com/lagunix/jnode-android/assets)
-
 ## How Does It Work
 
 Read
