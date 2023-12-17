@@ -5,7 +5,7 @@
 <div align="center">
 
 [![Latest release](https://img.shields.io/github/v/release/lagunix/jnode-android?include_prereleases&label=latest%20release&style=for-the-badge)](https://github.com/lagunix/jnode-android/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/lagunix/jnode-android/total?style=for-the-badge)
+![Downloads](https://img.shields.io/github/downloads/lagunix/jnode-android/total?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/lagunix/jnode-android?style=for-the-badge)
 [![Code-size](https://shields.io/github/languages/code-size/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)](https://github.com/lagunix/jnode-android/blob/main/CODE_OF_CONDUCT.md)
