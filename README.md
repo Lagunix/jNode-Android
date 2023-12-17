@@ -16,7 +16,7 @@
 ![Issues](https://shields.io/github/issues/Lagunix/jNode-Android?style=for-the-badge)
 ![Issues-pr](https://shields.io/github/issues-pr/Lagunix/jNode-Android?style=for-the-badge)
 ![Discussions](https://shields.io/github/discussions/Lagunix/jNode-Android?style=for-the-badge)
-![Forks](https://shields.io/github/forks/Lagunix/jNode-Android?style=for-the-badges)
+![Forks](https://shields.io/github/forks/Lagunix/jNode-Android?style=for-the-badge)
 ![Stars](https://shields.io/github/stars/lagunix/jnode-android?style=for-the-badge)
 ![Watchers](https://shields.io/github/watchers/lagunix/jnode-android?style=for-the-badge)
 ![Contributors](https://shields.io/github/contributors/lagunix/jnode-android?style=for-the-badge)
