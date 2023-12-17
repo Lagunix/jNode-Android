@@ -9,6 +9,9 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/lagunix/jnode-android?style=for-the-badge)
 [![github/code-size](https://shields.io/github/languages/code-size/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)](https://github.com/lagunix/jnode-android/blob/main/CODE_OF_CONDUCT.md)
+[![Languages](https://shields.io/github/languages/count/lagunix/jnode-android)](https://github.com/Lagunix/jNode-Android)
+[![github/languages/top](https://shields.io/github/languages/top/lagunix/jnode-android)](https://github.com/Lagunix/jNode-Android)
+[![github/directory-file-count](https://shields.io/github/directory-file-count/lagunux/jnode-android)](https://github.com/lagunix/jnode-android)
 [![LICENSE](https://img.shields.io/github/license/lagunix/jnode-android?color=blue&style=for-the-badge)](https://github.com/lagunix/jnode-android/blob/main/LICENSE)
 
 [![github/issues](https://shields.io/github/issues/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues)
@@ -23,13 +26,6 @@
 [![github/contributors](https://shields.io/github/contributors/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/graphs/contributors)
 [![github/commit-activity](https://shields.io/github/commit-activity/w/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/graphs/commit-activity)
 [![github/last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/commits)
-[![github/release-date](https://shields.io/github/release-date/lagunix/jnode-android)](https://github.com/lagunix/jnode-android/releases/latest)
-
-[![github/license](https://shields.io/github/license/Lagunix/jNode-Android)](https://github.com/Lagunix/jNode-Android/LICENSE)
-[![github/languages](https://shields.io/github/languages/count/lagunix/jnode-android)](https://github.com/Lagunix/jNode-Android)
-[![github/languages/top](https://shields.io/github/languages/top/lagunix/jnode-android)](https://github.com/Lagunix/jNode-Android)
-[![github/directory-file-count](https://shields.io/github/directory-file-count/lagunux/jnode-android)](https://github.com/lagunix/jnode-android)
-[![github/v](https://shields.io/github/v/release/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 </div>
 
 This version doesn't support:
