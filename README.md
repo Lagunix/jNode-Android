@@ -7,15 +7,9 @@
 [![Latest release](https://img.shields.io/github/v/release/lagunix/jnode-android?include_prereleases&label=latest%20release&style=for-the-badge)](https://github.com/lagunix/jnode-android/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/lagunix/jnode-android/total?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/lagunix/jnode-android?style=for-the-badge)
-![Test and Build](https://img.shields.io/github/actions/workflow/status/lagunix/jnode-android/test_and_build.yml?label=Test%20and%20Build&style=for-the-badge&logo=github)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)](https://github.com/lagunix/jnode-android/blob/main/CODE_OF_CONDUCT.md)
 [![LICENSE](https://img.shields.io/github/license/lagunix/jnode-android?color=blue&style=for-the-badge)](https://github.com/lagunix/jnode-android/blob/main/LICENSE)
-</div>
 
-[![readthedocs](https://shields.io/readthedocs/jnode-android)](https://jnode-android.readthedocs.io)
-
-[![github/downloads](https://shields.io/github/downloads/Lagunix/jNode-Android.git)](https://github.com/Lagunix/jNode-Android/releases)
-[![github/downloads](https://github.com/Lagunix/jNode-Android)](https://github.com/Lagunix/jNode-Android.git)
 [![github/issues](https://shields.io/github/issues/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues)
 [![github/issues-closed](https://shields.io/github/issues-closed/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues?q=is%3Aissue+is%3Aclosed)
 [![github/issues-pr](https://shields.io/github/issues-pr/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/pulls)
@@ -37,6 +31,7 @@
 [![github/code-size](https://shields.io/github/languages/code-size/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 [![github/repo-size](https://shields.io/github/repo-size/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 [![github/v](https://shields.io/github/v/release/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
+</div>
 
 This version doesn't support:
 
