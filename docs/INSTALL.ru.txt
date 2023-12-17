@@ -1,15 +1,15 @@
-1. Отредактировать ./etc/jnode.xxx.conf (где xxx - nix или win для Unix или Windows соответственно)
+1. Отредактировать ./etc/jnode.conf
 
 2. Отредактировать mail_module.conf если хотите чтоб работала почта и регистрация пойнтов.
 
-3. Запустить ./bin/run.sh дл *nix и mac, ./bin/run.bat для *win
+3. Запустить ./bin/run.sh для *nix
 
 4. Во время первого запуска jNode создаст базу и заполнит её. Не пропустите информацию о техническом пойнте (в логе)
  Пример вывода: 
-    18-01-2014 17:45:29 [00000001] InstallUtil          [+] owner point account created
-    18-01-2014 17:45:29 [00000001] InstallUtil
+    16-11-2023 17:45:29 [00000001] InstallUtil          [+] owner point account created
+    16-11-2023 17:45:29 [00000001] InstallUtil
 	FTN: 2:9999/9999.1
-	Aka: Rodriguez bender
+	Aka: Vasya Pupkin
 	Password: 7e3fb3d2
 
 5. jNode это серверное ПО, не предназначенное для непосредственного редактирования почты через UI.
