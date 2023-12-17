@@ -8,7 +8,6 @@
 ![Downloads](https://img.shields.io/github/downloads/lagunix/jnode-android/total?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/lagunix/jnode-android?style=for-the-badge)
 ![Code-size](https://shields.io/github/languages/code-size/lagunix/jnode-android?style=for-the-badge)
-![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)
 ![Languages](https://shields.io/github/languages/count/lagunix/jnode-android?style=for-the-badge)
 ![Languages/top](https://shields.io/github/languages/top/lagunix/jnode-android?style=for-the-badge)
 ![Directory-file-count](https://shields.io/github/directory-file-count/lagunix/jnode-android?style=for-the-badge)
