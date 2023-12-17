@@ -13,18 +13,15 @@
 [![Languages/top](https://shields.io/github/languages/top/lagunix/jnode-android?style=for-the-badge)](https://github.com/Lagunix/jNode-Android)
 [![Directory-file-count](https://shields.io/github/directory-file-count/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android)
 [![LICENSE](https://img.shields.io/github/license/lagunix/jnode-android?color=blue&style=for-the-badge)](https://github.com/lagunix/jnode-android/blob/main/LICENSE)
-
 [![Issues](https://shields.io/github/issues/Lagunix/jNode-Android?style=for-the-badge)](https://github.com/lagunix/jnode-android/issues)
 [![Issues-pr](https://shields.io/github/issues-pr/Lagunix/jNode-Android?style=for-the-badge)](https://github.com/lagunix/jnode-android/pulls)
-[![Issues-pr-closed](https://shields.io/github/issues-pr-closed/Lagunix/jNode-Android?style=for-the-badge)](https://github.com/lagunix/jnode-android/pulls?q=is%3Apr+is%3Aclosed)
 [![Discussions](https://shields.io/github/discussions/Lagunix/jNode-Android?style=for-the-badge)](https://github.com/Lagunix/jNode-Android/discussions)
-[![Milestones](https://shields.io/github/milestones/all/Lagunix/jNode-Android?style=for-the-badges)](https://github.com/lagunix/jnode-android/milestones)
-[![Forks](https://shields.io/github/forks/Lagunix/jNode-Android?style=for-the-badges)](https://github.com/lagunix/jnode-android/network/members)
-[![Stars](https://shields.io/github/stars/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android/stargazers)
-[![Watchers](https://shields.io/github/watchers/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android/watchers)
-[![Contributors](https://shields.io/github/contributors/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android/graphs/contributors)
-[![Commit-activity](https://shields.io/github/commit-activity/w/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android/graphs/commit-activity)
-[![Last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android?style=for-the-badge)](https://github.com/lagunix/jnode-android/commits)
+![Forks](https://shields.io/github/forks/Lagunix/jNode-Android?style=for-the-badges)](https://github.com/lagunix/jnode-android/network/members)
+![Stars](https://shields.io/github/stars/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android/stargazers)
+![Watchers](https://shields.io/github/watchers/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android/watchers)
+![Contributors](https://shields.io/github/contributors/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android/graphs/contributors)
+![Commit-activity](https://shields.io/github/commit-activity/w/lagunix/jnode-android?style=for-the-badge)](https://github.com/lagunix/jnode-android/graphs/commit-activity)
+![Last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android?style=for-the-badge)](https://github.com/lagunix/jnode-android/commits)
 </div>
 
 This version doesn't support:
