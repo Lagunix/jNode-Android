@@ -22,7 +22,7 @@
 ![Last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android?style=for-the-badge)
 </div>
 
-### This version doesn't support:
+#### This version doesn't support:
 
 - [ ] Chroot (termux-chroot)
 
@@ -32,9 +32,9 @@
 - [x] managed from Android interface
 - [x] managed from Termux
 
-### Screenshots
+#### Screenshots
 
-### Completion
+#### Completion
 
 ## How Does It Work
 
@@ -42,7 +42,7 @@ Read
 [![readthedocs](https://shields.io/readthedocs/lagunix/jnode-android)](https://jnode-android.readthedocs.io)
 to know more.
 
-### Known problems [fixed]
+#### Known problems [fixed]
 - [x] sucessfull send via loopback interface under non-rooted Android-13+ devices ONLY if receive packets in the same session (you must create any request to your node from your Android FTN-client like HotDoged before poll node)
 
 ## How to install:
@@ -67,7 +67,7 @@ to know more.
 
 Also, you can istall jNode under Termux proot or proot-distro pkg, but in this case, keep attention about free memory, strongly recommends at least 6Gb RAM or more.
 
-Regards to https://github.com/hssergey
+#### Regards to https://github.com/hssergey
 
 ============
 
