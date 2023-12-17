@@ -9,7 +9,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/lagunix/jnode-android?style=for-the-badge)
 [![github/code-size](https://shields.io/github/languages/code-size/lagunix/jnode-android)](https://github.com/lagunix/jnode-android)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)](https://github.com/lagunix/jnode-android/blob/main/CODE_OF_CONDUCT.md)
-[![Languages](https://shields.io/github/languages/count/lagunix/jnode-android)](https://github.com/Lagunix/jNode-Android)
+[![Languages](https://shields.io/github/languages/count/lagunix/jnode-android?style=for-the-badge)](https://github.com/Lagunix/jNode-Android)
 [![github/languages/top](https://shields.io/github/languages/top/lagunix/jnode-android)](https://github.com/Lagunix/jNode-Android)
 [![github/directory-file-count](https://shields.io/github/directory-file-count/lagunux/jnode-android)](https://github.com/lagunix/jnode-android)
 [![LICENSE](https://img.shields.io/github/license/lagunix/jnode-android?color=blue&style=for-the-badge)](https://github.com/lagunix/jnode-android/blob/main/LICENSE)
