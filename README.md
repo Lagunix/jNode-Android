@@ -4,7 +4,7 @@
 
 [![readthedocs](https://shields.io/readthedocs/jnode-android)](https://jnode-android.readthedocs.io)
 
-[![github/downloads](https://shields.io/github/downloads/Lagunix/jNode-Android/total)](https://github.com/Lagunix/jNode-Android/releases)
+[![github/downloads](https://shields.io/github/downloads/Lagunix/jNode-Android)](https://github.com/Lagunix/jNode-Android/releases)
 [![github/downloads](https://github.com/Lagunix/jNode-Android)](https://github.com/Lagunix/jNode-Android.git)
 [![github/issues](https://shields.io/github/issues/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues)
 [![github/issues-closed](https://shields.io/github/issues-closed/Lagunix/jNode-Android)](https://github.com/lagunix/jnode-android/issues?q=is%3Aissue+is%3Aclosed)
