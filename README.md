@@ -1,5 +1,5 @@
-<div align="center">
 # jNode-Android
+<div align="center">
 
 **Android/Termux edition**
 
@@ -22,19 +22,19 @@
 ![Last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android?style=for-the-badge)
 </div>
 
-This version doesn't support:
+###This version doesn't support:
 
 - [ ] Chroot (termux-chroot)
 
-Features:
+##Features:
 
 - [x] synchronous network interface
 - [x] managed from Android interface
 - [x] managed from Termux
 
-## Screenshots
+### Screenshots
 
-## Completion
+### Completion
 
 ## How Does It Work
 
