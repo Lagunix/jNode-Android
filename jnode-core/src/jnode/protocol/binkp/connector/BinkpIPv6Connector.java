@@ -1,3 +1,8 @@
+/*
+JVM_ARGS
+-Djava.net.preferIPv4Stack=false -Djava.net.preferIPv6Addresses=true
+*/
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
