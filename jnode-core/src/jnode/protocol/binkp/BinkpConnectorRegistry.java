@@ -28,6 +28,7 @@ import jnode.protocol.binkp.connector.BinkpAbstractConnector;
 import jnode.protocol.binkp.connector.BinkpAsyncConnector;
 import jnode.protocol.binkp.connector.BinkpPipeConnector;
 import jnode.protocol.binkp.connector.BinkpSyncConnector;
+import jnode.protocol.binkp.connector.BinkpIPv6Connector;
 
 /**
  * Хранит в себе разные коннекторы - для модульности
@@ -50,6 +51,10 @@ public class BinkpConnectorRegistry {
 		connectorMap.put("sync:", BinkpSyncConnector.class);
 		connectorMap.put("pipe:", BinkpPipeConnector.class);
 		connectorMap.put("|", BinkpPipeConnector.class);
+ connectorMap.put("::",
+BinkpIPv6Connector.class);
+ connectorMap.put("ipv6:",
+BinkpIPv6Connector.class);
 	}
 
 	public synchronized void add(String key,
