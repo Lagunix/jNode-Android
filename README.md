@@ -25,6 +25,7 @@
 ### This version doesn't support:
 
 - [ ] Chroot (termux-chroot)
+- [ ] IPV6
 
 ## Features:
 
