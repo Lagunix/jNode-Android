@@ -1,6 +1,6 @@
 *** jNode users F.A.Q. ***
 *** created at 11.01.2014 ***
-*** Updated at 3.12.2023 ***
+*** Updated at 13.02.2023 ***
 
 Q: What is jNode?
 A: This is a Fidonet Technical Network ( FTN ) software platform which covers typical needs of Fidonet node.
@@ -32,6 +32,15 @@ Forward all mail from 2:5020/848 to 2:5020/848.1:
 1	NETMAIL/true	^2:5020\/848$ -> 2:5020/848.1	* -> *	* -> *	* -> *	* -> *
 Rewrite netmail from technical point to areafix of uplink.
 10	NETMAIL/true	^2:5020\/848\.1$ -> 2:5020/848	* -> *	^2:5020\/848$ -> 2:5020/4441	afix4441 -> AreaFix	* -> password
+A3: The paragraph above indicates the configuration via a database entry, below is a slightly clearer description for the web interface:
+We create a transit subscription to the uplink from a point (not necessarily a technical one), practically this means that the point does not know the uplink password, and sends a netmail with an empty Subj field, and JNode overwrites such a netmail with a password substitution. You can create as many such records as you want for different uplinks.
+Open the web interface, go to the Management menu, then Tracking. Creating a new overwrite rule:
+a) the address of the point From to the address of the node From, for example, the old sender's address: ^2:50\/700\.1$ (for any point, respectively.*$, new sender's address: 2:50/700;
+b) the old topic (Subj) *, the new topic is _uplink_password_;
+c) the old name of the recipient is AreaFix, the new name of the recipient - *;
+d) all other fields: *.
+And we set the minimum priority. For example, I set the priority "1" on all auto-subscription rolls for uplinks, and then there is "10" - rewrite of sending a techpoint -> node and "20" - rewrite of receiving a node -> techpoint.
+We send the AreaFix uplink netmail from the point, the Subj field is empty, in fact, the uplink leaves a normal subscription request. The echo arrives on the node, the robot publishes the fact of the appearance of a new echo in the echo statistics, the point can only subscribe to its node.
 
 Q: Does it works on XXX?
 A: It should works on every system has Java 1.7+ implementation, but really nobody knows.
