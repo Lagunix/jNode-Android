@@ -1,6 +1,6 @@
 ** Версия для Termux/Android**
 
-[![Последний релиз](https://img.shields.io/github/v/release/lagunix/jnode-android?include_prereleases&label=latest%20release&style=for-the-badge)](https://github.com/lagunix/jnode-android/releases/latest)
+[![Последний релиз](https://img.shields.io/github/v/release/lagunix/jnode-android?include_prereleases&label=последний%20релиз&style=for-the-badge)](https://github.com/lagunix/jnode-android/releases/latest)
 ![Загрузки](https://img.shields.io/github/downloads/lagunix/jnode-android/total?style=for-the-badge)
 ![Размер репы](https://img.shields.io/github/repo-size/lagunix/jnode-android?style=for-the-badge)
 ![Code-size](https://shields.io/github/languages/code-size/lagunix/jnode-android?style=for-the-badge)
