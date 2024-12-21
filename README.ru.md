@@ -1,5 +1,24 @@
 ** Версия для Termux/Android**
 
+[![Последний релиз](https://img.shields.io/github/v/release/lagunix/jnode-android?include_prereleases&label=latest%20release&style=for-the-badge)](https://github.com/lagunix/jnode-android/releases/latest)
+![Загрузки](https://img.shields.io/github/downloads/lagunix/jnode-android/total?style=for-the-badge)
+![Размер репы](https://img.shields.io/github/repo-size/lagunix/jnode-android?style=for-the-badge)
+![Code-size](https://shields.io/github/languages/code-size/lagunix/jnode-android?style=for-the-badge)
+![Languages](https://shields.io/github/languages/count/lagunix/jnode-android?style=for-the-badge)
+![Languages/top](https://shields.io/github/languages/top/lagunix/jnode-android?style=for-the-badge)
+![Directory-file-count](https://shields.io/github/directory-file-count/lagunix/jnode-android?style=for-the-badge)
+![LICENSE](https://img.shields.io/github/license/lagunix/jnode-android?color=blue&style=for-the-badge)
+![Issues](https://shields.io/github/issues/Lagunix/jNode-Android?style=for-the-badge)
+![Issues-pr](https://shields.io/github/issues-pr/Lagunix/jNode-Android?style=for-the-badge)
+![Discussions](https://shields.io/github/discussions/Lagunix/jNode-Android?style=for-the-badge)
+![Forks](https://shields.io/github/forks/Lagunix/jNode-Android?style=for-the-badge)
+![Stars](https://shields.io/github/stars/lagunix/jnode-android?style=for-the-badge)
+![Watchers](https://shields.io/github/watchers/lagunix/jnode-android?style=for-the-badge)
+![Contributors](https://shields.io/github/contributors/lagunix/jnode-android?style=for-the-badge)
+![Commit-activity](https://shields.io/github/commit-activity/w/lagunix/jnode-android?style=for-the-badge)
+![Last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android?style=for-the-badge)
+</div>
+
 Особенности:
 * используется синхронный интерфейс
 
