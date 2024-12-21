@@ -9,14 +9,14 @@
 ![Directory-file-count](https://shields.io/github/directory-file-count/lagunix/jnode-android?style=for-the-badge&label=число%20файлов)
 ![LICENSE](https://img.shields.io/github/license/lagunix/jnode-android?color=blue&style=for-the-badge&label=лицензия)
 ![Issues](https://shields.io/github/issues/Lagunix/jNode-Android?style=for-the-badge&label=проблем)
-![Issues-pr](https://shields.io/github/issues-pr/Lagunix/jNode-Android?style=for-the-badge)
-![Discussions](https://shields.io/github/discussions/Lagunix/jNode-Android?style=for-the-badge)
-![Forks](https://shields.io/github/forks/Lagunix/jNode-Android?style=for-the-badge)
-![Stars](https://shields.io/github/stars/lagunix/jnode-android?style=for-the-badge)
-![Watchers](https://shields.io/github/watchers/lagunix/jnode-android?style=for-the-badge)
-![Contributors](https://shields.io/github/contributors/lagunix/jnode-android?style=for-the-badge)
-![Commit-activity](https://shields.io/github/commit-activity/w/lagunix/jnode-android?style=for-the-badge)
-![Last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android?style=for-the-badge)
+![Issues-pr](https://shields.io/github/issues-pr/Lagunix/jNode-Android?style=for-the-badge&label=закрытых%20проблем)
+![Discussions](https://shields.io/github/discussions/Lagunix/jNode-Android?style=for-the-badge&label=обсуждений)
+![Forks](https://shields.io/github/forks/Lagunix/jNode-Android?style=for-the-badge&label=копий)
+![Stars](https://shields.io/github/stars/lagunix/jnode-android?style=for-the-badge&label=звезд)
+![Watchers](https://shields.io/github/watchers/lagunix/jnode-android?style=for-the-badge&label=наблюдателей)
+![Contributors](https://shields.io/github/contributors/lagunix/jnode-android?style=for-the-badge&label=контрибуторов)
+![Commit-activity](https://shields.io/github/commit-activity/w/lagunix/jnode-android?style=for-the-badge&label=коммитов)
+![Last-commit](https://shields.io/github/last-commit/Lagunix/jNode-Android?style=for-the-badge&label=последний%20коммит)
 </div>
 
 Особенности:
